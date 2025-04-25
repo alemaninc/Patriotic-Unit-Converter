@@ -1,8 +1,6 @@
 const convertBtn = document.getElementById("convert-btn");
 let inputEl = document.getElementById("input");
 let lengthEl = document.getElementById("length");
-const AnthemAudio = new Audio("bgmusictrim.mp3");
-const AnthemShotgun = new Audio("shotgunsound.mp3");
 convertBtn.addEventListener("click", function () {
   var ddl = document.getElementById("convselect");
   var selectedValue = ddl.options[ddl.selectedIndex].value;
@@ -19,6 +17,4 @@ convertBtn.addEventListener("click", function () {
     {
       lengthEl.textContent = `${baseValue.format()} litre(s) = ${baseValue.mul(15).format()} cups of tea`;
     }
-  AnthemAudio.play();
-  AnthemShotgun.play();
 });

@@ -1,10 +1,9 @@
-@font-face {
-  font-family: "AmericanCaptain";
-  src: url("assets/AmericanCaptain.otf");
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: rem;
 }
 
 body {
@@ -35,6 +34,7 @@ body {
       background-color: #3e9eff;
       border-radius: 0.5rem;
       border: 2px solid #373633;
+      text-align: center;
 
       .input-wrapper {
         display: flex;
@@ -55,6 +55,16 @@ body {
         }
       }
 
+      #convert-btn {
+        background-color:rgba(0,0,0,0);
+        border-style:solid;
+        border-color:#ffffff;
+        border-radius:25px;
+        color:#ffffff;
+        height:50px;
+        width:200px;
+      }
+
       .boxes {
         display: flex;
         width: 80%;
@@ -64,17 +74,4 @@ body {
       }
     }
   }
-}
-
-button {
-  border: none;
-  margin: 1rem;
-  background-image: url("assets/button.svg");
-  width: 600px;
-  height: 600px;
-  background-color: transparent;
-  cursor: pointer;
-}
-button:hover {
-  transform: translate(4px, 4px);
 }
