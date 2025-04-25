@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "AmericanCaptain";
+  src: url("assets/AmericanCaptain.otf");
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+body {
+  background-color: #ff0000;
+  font-family: "AmericanCaptain", sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .card {
+      display: flex;
+      padding: 1rem 2rem;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      max-width:60vw;
+      background-color: #3e9eff;
+      border-radius: 0.5rem;
+      border: 2px solid #373633;
+
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        align-items: center;
+        gap: 1rem;
+        .input {
+          display: flex;
+          padding: 0.5rem;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          flex: 1 0 0;
+          align-self: stretch;
+        }
+      }
+
+      .boxes {
+        display: flex;
+        width: 80%;
+        padding: 0.5rem 0px;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+button {
+  border: none;
+  margin: 1rem;
+  background-image: url("assets/button.svg");
+  width: 600px;
+  height: 600px;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:hover {
+  transform: translate(4px, 4px);
+}
